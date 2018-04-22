@@ -24,7 +24,7 @@ Route::get('hearts', function() {
 });
 
 Route::get('jokers', function() {
-    return App\Joker::all();
+    return App\Jokers::all();
 });
 
 Route::get('spades', function() {

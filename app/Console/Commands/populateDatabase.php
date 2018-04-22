@@ -221,7 +221,7 @@ class populateDatabase extends Command
                 'selected' => 0 ],
         ]);  
         Jokers::insert([
-            ['name' => 'Red',
+            ['name' => 'Black',
             'isocode' => '🃏',
             'selected' => 0],
             ['name' => 'White',
