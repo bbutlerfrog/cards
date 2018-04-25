@@ -64,13 +64,13 @@
                         <div class="col-sm-6 col-md-3">
                             @foreach ($clubs as $club)
                                 <div id="club{{$club->id}}">
-                                    <h4>
+                                    <h1>
                                         @if ($club->selected)
                                             🂠
                                         @else
                                             {{$club->isocode}}
                                         @endif
-                                    </h4>
+                                    </h1>
                                </div>    
                             @endforeach
                             <div id="clubButton">
@@ -80,13 +80,13 @@
                         <div class="col-sm-6 col-md-3">
                      @foreach ($diamonds as $diamond)
                     <div id="diamond{{$diamond->id}}">
-                        <h4>
+                        <h1>
                             @if ($diamond->selected)
                                 🂠
                             @else
                                 {{$diamond->isocode}}
                             @endif
-                        </h4>
+                        </h1>
                     </div>    
                 @endforeach
                 <div id="diamondButton">
@@ -96,13 +96,13 @@
             <div class="col-sm-6 col-md-3">
                 @foreach ($hearts as $heart)
                     <div id="heart{{$heart->id}}">
-                        <h4>
+                        <h1>
                             @if ($heart->selected)
                                 🂠
                             @else
                                 {{$heart->isocode}}
                             @endif
-                        </h4>
+                        </h1>
                     </div>    
                 @endforeach
                 <div id="heartButton">
@@ -112,13 +112,13 @@
             <div class="col-sm-6 col-md-3">
                 @foreach ($spades as $spade)
                     <div id="spade{{$spade->id}}">
-                        <h4>
+                        <h1>
                             @if ($spade->selected)
                                 🂠
                             @else
                                 {{$spade->isocode}}
                             @endif
-                        </h4>
+                        </h1>
                     </div>    
                     @endforeach
                 <div id="spadeButton">    
@@ -130,13 +130,13 @@
             <div class="col-12">
                 @foreach ($jokers as $joker)
                     <div id="joker{{$joker->id}}">
-                        <h4> 
+                        <h1> 
                             @if ($joker->selected)
                                 🂠
                             @else 
                                 {{$joker->isocode}}
                             @endif
-                        </h4>        
+                        </h1>        
                     </div>        
                 @endforeach
             <div id="jokerButton">

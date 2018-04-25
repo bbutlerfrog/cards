@@ -31,7 +31,7 @@ function selectCard( suit ) {
             window.location.reload(true);
         }
         else {
-            $('#' + suit + data).html('<h4>🂠</h4>'); 
+            $('#' + suit + data).html('<h1>🂠</h1>'); 
         }    
     })
     .fail(function() {
