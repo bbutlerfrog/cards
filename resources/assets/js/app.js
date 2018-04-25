@@ -1,22 +1,62 @@
+var $ = require("jquery");
+import 'bootstrap';
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
-require('./bootstrap');
-
-window.Vue = require('vue');
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-const app = new Vue({
-    el: '#app'
+$(document).ready(function() {
+    $("#heart").click(function() {
+        selectCard('heart');
+    });
+    $("#club").click(function () {
+        selectCard('club');
+    });
+    $("#diamond").click(function () {
+        selectCard('diamond');
+    });
+    $("#spade").click(function () {
+        selectCard('spade');
+    });
+    $("#joker").click(function () {
+        selectCard('joker');
+    });
 });
+
+function selectCard( suit ) {
+    $.ajax({
+        url : '/' + suit,
+        beforeSend: function( ) {
+            $('#'+suit+'Button').html('<div class="fa=3x"><i class="fas fa-spinner fa-spin"></i></div>');
+        }    
+    })
+    .done(function( data ) {
+        if (data == 'reset') {
+            window.location.reload(true);
+        }
+        else {
+            $('#' + suit + data).html('<h4>🂠</h4>'); 
+        }    
+    })
+    .fail(function() {
+        showError ();
+    })
+    .always(function() {
+        $('#'+suit+'Button').html('<button type="button" class="btn btn-primary" id="'+suit+'">'+jsUcfirst(suit)+'</button>')
+        $('#'+suit).click(function() {
+            selectCard(suit);
+        });
+    });
+} 
+
+function jsUcfirst(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function showError() {
+    $.ajax({
+        url : '/selecting-card-error',
+        dataType : 'html'
+    })
+    .done(function(data) {
+        $('#error').html(data);
+    })
+}
+
+

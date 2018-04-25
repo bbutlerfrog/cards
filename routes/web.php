@@ -11,22 +11,16 @@
 |
 */
 
-Route::get('clubs', function() {
-    return App\Clubs::all();
-});
+Route::get('/', 'LayoutController@mainLayout');
 
-Route::get('diamonds', function() {
-    return App\Diamonds::all();
-});
+Route::get('/heart', 'HeartsController');
+Route::get('/club', 'ClubsController');
+Route::get('/diamond', 'DiamondsController');
+Route::get('/spade', 'SpadesController');
+Route::get('/joker', 'JokersController');
 
-Route::get('hearts', function() {
-    return App\Hearts::all();
-});
 
-Route::get('jokers', function() {
-    return App\Jokers::all();
-});
-
-Route::get('spades', function() {
-    return App\Spades::all();
+Route::get('selecting-card-error', function() {
+    return view('layouts/error',  [ 'operation' => 'Selecting',
+                                    'problem' => 'Card']);
 });
