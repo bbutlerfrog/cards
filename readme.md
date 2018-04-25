@@ -27,7 +27,7 @@ You do not need to install Laravel from the "ground up" to use this demonstratio
     applications from running).
 4.  Using whichever MySQL client you prefer, create a username and password that you feel comfortable storing in the configuration file for this application as
     an administrator on a database server you will be able to access from the server this application is installed on.  
-    (See <a href="https://dev.mysql.com/doc/refman/5.7/en/create-user.html">the MySQL documenation<> for )
+    (See <a href="https://dev.mysql.com/doc/refman/5.7/en/create-user.html">the MySQL documentation</a>for )
 5.  Create a new schema/database on that database server as an administrator specifically for this application <b>assuring that the collation for that schema is          UTF-8/Unicode (this is typically not the default for MySQL, and you will experience issues with this application if you create the schema
     in any other collation)</b>.  The command for this is generally "CREATE DATABASE mydatabase CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;", see 
     <a href="https://dba.stackexchange.com/questions/76788/create-a-database-with-charset-utf-8">
