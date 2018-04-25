@@ -64,7 +64,7 @@
                         <div class="col-sm-6 col-md-3">
                             @foreach ($clubs as $club)
                                 <div id="club{{$club->id}}">
-                                    <h1>
+                                    <h1 class="card-body">
                                         @if ($club->selected)
                                             🂠
                                         @else
@@ -80,7 +80,7 @@
                         <div class="col-sm-6 col-md-3">
                      @foreach ($diamonds as $diamond)
                     <div id="diamond{{$diamond->id}}">
-                        <h1>
+                        <h1 class="card-body">
                             @if ($diamond->selected)
                                 🂠
                             @else
@@ -96,7 +96,7 @@
             <div class="col-sm-6 col-md-3">
                 @foreach ($hearts as $heart)
                     <div id="heart{{$heart->id}}">
-                        <h1>
+                        <h1 class="card-body">
                             @if ($heart->selected)
                                 🂠
                             @else
@@ -112,7 +112,7 @@
             <div class="col-sm-6 col-md-3">
                 @foreach ($spades as $spade)
                     <div id="spade{{$spade->id}}">
-                        <h1>
+                        <h1 class="card-body">
                             @if ($spade->selected)
                                 🂠
                             @else
@@ -130,7 +130,7 @@
             <div class="col-12">
                 @foreach ($jokers as $joker)
                     <div id="joker{{$joker->id}}">
-                        <h1> 
+                        <h1 class="card-body"> 
                             @if ($joker->selected)
                                 🂠
                             @else 
