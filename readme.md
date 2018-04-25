@@ -57,4 +57,5 @@ You do not need to install Laravel from the "ground up" to use this demonstratio
 ## Running
 
 If all went well with the application installation and configuration, you should simply be able to pull up the root of your site and see exactly what is 
-displayed at <a href="https://cards.benfrog.net/">https://cards.benfrog.net</a>.  If you can't, feel free to reach out to <mailto:benfrog@benfrog.net>.       
+displayed at <a href="https://cards.benfrog.net/">https://cards.benfrog.net</a>.  If you can't, feel free to reach out to 
+<a href="mailto:benfrog@benfrog.net">benfrog@benfrog.net</a>.       
