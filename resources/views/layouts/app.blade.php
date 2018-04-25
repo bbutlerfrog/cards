@@ -30,6 +30,8 @@
                                odd characters on this page), you may be running an older browser that does not support 
                                <a href="https://en.wikipedia.org/wiki/Unicode" target="blank">Unicode</a>
                                and unfortunately you cannot use this site.</p>
+                               <p>Note that this is a shared site/exercise with anyone else that may be selecting cards, so you might notice cards getting 
+                                   selected by, well, anyone!</p>
                             </div>
                            <div class="modal-footer">
                            <button type="button" class="btn btn-primary" data-dismiss="modal">Got It</button>
