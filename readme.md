@@ -1,11 +1,11 @@
-##Cards Developer Exercise
+## Cards Developer Exercise
 
 ## What is This?
 
 This is a developer Exercise for the <a href="https://solve.mit.edu/">MIT Solve Project</a>, but of course anyone can play with it if they'd like.  
 See the <a href="https://cards.benfrog.net">site itself to try this exercise out (it contains instructions for how it works, click on the "?" icon).
 
-##Requirements
+## Requirements
 
 This is written in <a href="https://laravel.com/docs/5.6">Laravel 5.6</a>, full  requirements <a href="https://laravel.com/docs/5.6#server-requirement"> are available in Laravel's documentation.  Please take note of <a href="https://laravel.com/docs/5.6#pretty-urls">how to configure Apache, Nginx, and other servers for Laravel's "Pretty URL's"</a>.  If you do not know how to do this for your server, please refer to your server's documentation (this demonstation will fail without this configuration step, the .htaccess file is included but if rewrites are not enabled for your server and whichever site you and serving this project from, you will experience issues).  For further information regarding Apache, <a href="http://httpd.apache.org/docs/current/mod/mod_rewrite.html">see this link</a>.  This demonstration further requires both a web server and database server completely supporting 
 <a href="https://en.wikipedia.org/wiki/Unicode">, further steps to ensure proper Unicode support are documented below.  You must also install an 
@@ -14,7 +14,7 @@ up-to-date version of <a href="https://www.npmjs.com/"> Node Package Manager</a>
 You must also have <a href="https://getcomposer.org/">Composer</a> installed (this is a requirement for Laravel in general, as you'll note) and Git installed 
 (this is a requirement to clone this repository, as you might guess).  This application also requires a MySQL 5.7 server on which you have administrative access.  
 
-##Installation
+## Installation
 
 You do not need to install Laravel from the "ground up" to use this demonstration.  Follow these steps:
 1.  Clone this repository to either your development or production server 
@@ -54,7 +54,7 @@ You do not need to install Laravel from the "ground up" to use this demonstratio
 11. Configure your web server (development or production) to use the "public" directory of wherever you choose to put the repository's code as the root directory,
     taking note of the above potential redirect and permissions issues.  
 
-##Running
+## Running
 
 If all went well with the application installation and configuration, you should simply be able to pull up the root of your site and see exactly what is 
 displayed at <a href="https://cards.benfrog.net/">https://cards.benfrog.net</a>.  If you can't, feel free to reach out to <mailto:benfrog@benfrog.net>.       
